@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Online Result System 3</display-name>
+ 
+ <!--Common Module -->
+ 
+  <servlet>
+    <servlet-name>WelcomeCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.WelcomeCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeCtl</servlet-name>
+    <url-pattern>/WelcomeCtl</url-pattern>
+  </servlet-mapping>
+  
+  	<!--User Module -->
+  	
+  <servlet>
+    <servlet-name>UserCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.UserCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserCtl</servlet-name>
+    <url-pattern>/ctl/UserCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserListCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.UserListCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserListCtl</servlet-name>
+    <url-pattern>/ctl/UserListCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserRegistrationCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.UserRegistrationCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserRegistrationCtl</servlet-name>
+    <url-pattern>/UserRegistrationCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyProfileCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.MyProfileCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyProfileCtl</servlet-name>
+    <url-pattern>/ctl/MyProfileCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.LoginCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginCtl</servlet-name>
+    <url-pattern>/LoginCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ChangePasswordCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.ChangePasswordCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordCtl</servlet-name>
+    <url-pattern>/ChangePasswordCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ForgetPasswordCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.ForgetPasswordCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgetPasswordCtl</servlet-name>
+    <url-pattern>/ForgetPasswordCtl</url-pattern>
+  </servlet-mapping>
+  
+  	<!--Role Module -->
+  
+  <servlet>
+    <servlet-name>RoleCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.RoleCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoleCtl</servlet-name>
+    <url-pattern>/ctl/RoleCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RoleListCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.RoleListCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoleListCtl</servlet-name>
+    <url-pattern>/ctl/RoleListCtl</url-pattern>
+  </servlet-mapping>
+  
+     <!--Doctor Module  -->
+  
+  <servlet>
+    <servlet-name>DownloadCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.DownloadCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadCtl</servlet-name>
+    <url-pattern>/ctl/DownloadCtl</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>FrontCtl</filter-name>
+    <filter-class>in.co.sunrays.hca.controller.FrontController</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FrontCtl</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>DoctorCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.DoctorCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorCtl</servlet-name>
+    <url-pattern>/ctl/DoctorCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DoctorListCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.DoctorListCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorListCtl</servlet-name>
+    <url-pattern>/ctl/DoctorListCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PatientCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.PatientCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientCtl</servlet-name>
+    <url-pattern>/ctl/PatientCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PatientListCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.PatientListCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientListCtl</servlet-name>
+    <url-pattern>/ctl/PatientListCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AppointmentCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.AppointmentCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointmentCtl</servlet-name>
+    <url-pattern>/ctl/AppointmentCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AppointmentListCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.AppointmentListCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointmentListCtl</servlet-name>
+    <url-pattern>/ctl/AppointmentListCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ChatCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.ChatCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChatCtl</servlet-name>
+    <url-pattern>/ctl/ChatCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ChatListCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.ChatListCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChatListCtl</servlet-name>
+    <url-pattern>/ctl/ChatListCtl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RequestMasterCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.RequestMasterCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestMasterCtl</servlet-name>
+    <url-pattern>/ctl/RequestMasterCtl</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <servlet-name>RequestMasterListCtl</servlet-name>
+    <servlet-class>in.co.sunrays.hca.controller.RequestMasterListCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestMasterListCtl</servlet-name>
+    <url-pattern>/ctl/RequestMasterListCtl</url-pattern>
+  </servlet-mapping> 
+  
+<!-- Generic Error Handler Controller -->
+
+  <servlet>
+    <servlet-name>ErrorCtl</servlet-name>
+    <servlet-class>in.co.sunrays.common.controller.ErrorCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ErrorCtl</servlet-name>
+    <url-pattern>/ErrorCtl</url-pattern>
+  </servlet-mapping>
+  
+ <!--forward to error page if incorrect URI is given --> 
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/common/Error404.jsp</location>
+  </error-page>
+  
+  <filter>
+    <filter-name>MainCtl</filter-name>
+    <filter-class>in.co.sunrays.hca.controller.FrontController</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MainCtl</filter-name>
+    <url-pattern>/ctl/*</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+   <welcome-file>index.html</welcome-file>
+    <welcome-file>LoginCtl</welcome-file>
+  </welcome-file-list>
+</web-app>
